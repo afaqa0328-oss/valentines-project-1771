@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine Letter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p>♡ Letter for You ♡</p>
+    </div>
+
+    <!-- Photos/Text Screen -->
+    <div id="photos-container" style="display: none;">
+      <div class="letter-window" id="photos-window">
+        <div class="carousel-container">
+          <img src="assets/our_photo_1771037063822.JPG" class="carousel-photo active" />
+          <img src="assets/photo2_1771037063841.JPG" class="carousel-photo" />
+          <img src="assets/photo3_1771037063843.JPG" class="carousel-photo" />
+          <img src="assets/photo4_1771037063845.jpg" class="carousel-photo" />
+          <img src="assets/photo5_1771037063846.jpg" class="carousel-photo" />
+          <img src="assets/photo6_1771037063847.jpg" class="carousel-photo" />
+          <img src="assets/photo7_1771037063848.jpg" class="carousel-photo" />
+          <img src="assets/photo8_1771037063849.jpg" class="carousel-photo" />
+          <img src="assets/photo9_1771037063850.jpg" class="carousel-photo" />
+          <img src="assets/photo10_1771037063853.jpg" class="carousel-photo" />
+          <img src="assets/photo11_1771037063854.jpg" class="carousel-photo" />
+          <img src="assets/photo12_1771037063856.jpg" class="carousel-photo" />
+        </div>
+        <div class="heartfelt-text">
+          <p id="typewriter-text" class="text-message"></p>
+        </div>
+        <button id="next-to-valentine" class="next-btn" style="display: none;">Next ♡</button>
+      </div>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title">Will you be my Valentine?</h1>
+
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+
+        <p id="final-text" class="final-text" style="display: none">
+          <strong>Yayyyy</strong> thought you'd decline 😰
+        </p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
