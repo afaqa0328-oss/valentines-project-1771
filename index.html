@@ -15,6 +15,16 @@
     <title>Document</title>
   </head>
   <body>
+    <script>
+const password = "forever";
+
+const userInput = prompt("Enter the password:");
+
+if (userInput !== password) {
+  document.body.innerHTML = "<h1>Access Denied 💔</h1>";
+}
+</script>
+
     <!-- Envelope Screen -->
     <div id="envelope-container">
       <img src="envelope.png" alt="Envelope" id="envelope" />
